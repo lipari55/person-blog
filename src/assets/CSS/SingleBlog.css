@@ -1,5 +1,9 @@
 #single-blog{
 	overflow: hidden;
+	
+}
+a {
+	text-decoration: none;
 }
 #blog-detail{
 	background: #eee;

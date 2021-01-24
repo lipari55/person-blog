@@ -92,8 +92,7 @@ export default {
   margin: 20px auto;
   width: 800px;
   padding: 20px;
-  background: #428bca;
-  height: 580px;
+  height: 100%;
 }
 
 form > label {
@@ -109,7 +108,6 @@ select {
   width: 100%;
   padding: 6px;
   border-radius: 5px;
-  border: 1px solid black;
 }
 
 input[type="text"],
@@ -117,9 +115,6 @@ textarea {
   font-size: 18px;
 }
 
-textarea {
-  height: 300px;
-}
 
 #checkboxes label {
   display: inline-block;

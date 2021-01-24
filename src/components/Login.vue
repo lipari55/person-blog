@@ -4,6 +4,7 @@
       <h2>登录</h2>
       <input
         type="text"
+        class="form-control"
         placeholder="请输入用户名"
         v-model="username"
         required
@@ -14,7 +15,7 @@
         v-model="password"
         required
       />
-      <button @click="login">登录</button>
+      <button @click="login" class="btn btn-primary">登录</button>
       <span @click="toRegist()">没有账号？马上注册</span>
     </div>
   </div>
@@ -97,10 +98,6 @@ input {
   box-sizing: border-box;
 }
 
-p {
-  color: red;
-}
-
 button {
   display: block;
   width: 250px;
@@ -108,7 +105,7 @@ button {
   line-height: 40px;
   margin: 0 auto;
   border: none;
-  background-color: #41b883;
+  border: 1px solid #888;
   color: #fff;
   font-size: 16px;
   margin-bottom: 5px;
@@ -119,6 +116,6 @@ span {
 }
 
 span:hover {
-  color: #41b883;
+  color: #fff;
 }
 </style>

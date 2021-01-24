@@ -18,12 +18,12 @@ import addBlog from '@/components/AddBlog.vue'
 import showBlogs from '@/components/ShowBlogs.vue'
 import blogHeader from '@/components/BlogHeader.vue'
 import login from '@/components/Login.vue'
-import clock from  '@/components/clock.vue'
+// import clock from  '@/components/clock.vue'
 export default {
   name: 'App',
   components: {
     blogHeader,
-    clock
+    // clock
   },
   data(){
   }
@@ -41,6 +41,12 @@ export default {
     color:#2c3e50;
     /*margin-top:60px;*/
     overflow:hidden;
+    background-image: url("./assets/background.jpg") !important;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100%;
+    position: fixed;
+    width: 100%;
     }
 
   #left,#right{

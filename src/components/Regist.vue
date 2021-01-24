@@ -20,7 +20,7 @@
         v-model="secondNewPassword"
         required
       />
-      <button @click="regist()">注册</button>
+      <button @click="regist()" class="btn btn-primary">注册</button>
       <span @click="toLogin()">已有账号？马上登录</span>
     </div>
   </div>
@@ -112,7 +112,7 @@ button {
   line-height: 40px;
   margin: 0 auto;
   border: none;
-  background-color: #41b883;
+  border: 1px solid #888;
   color: #fff;
   font-size: 16px;
   margin-bottom: 5px;
@@ -123,6 +123,6 @@ span {
 }
 
 span:hover {
-  color: #41b883;
+  color: #fff;
 }
 </style>

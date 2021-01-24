@@ -1,18 +1,24 @@
 <template>
   <div id="header">
-    <nav>
-      <ul id="userCenter">
-        <li>
-          <router-link to="/userCenter" exact>个人中心</router-link>
-        </li>
-      </ul>
-      <ul id="blogHeader">
-        <li>
-          <router-link to="/" exact>博客首页</router-link> |
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand">
+    <img src="../assets/logo.jpeg">
+    <router-link to="/" exact></router-link>
+  </a>
+  <div class="collapse navbar-collapse" id="navbarColor01" >
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link">
+          <router-link to="/" exact>博客首页</router-link>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
           <router-link to="/add" exact>添加博客</router-link>
-        </li>
-      </ul>
-      <ul id="login_regist">
+        </a>
+      </li>
+    </ul>
+     <ul id="login_regist">
         <li>
           <router-link v-if="isLogin === '0'" to="/login" exact
             >登录</router-link
@@ -26,7 +32,8 @@
           >
         </li>
       </ul>
-    </nav>
+  </div>
+</nav>
   </div>
 </template>
 
@@ -66,7 +73,7 @@ export default {
   margin-bottom: 40px;
   margin-top: 50px;
 }
-nav {
+/* nav {
   width: 1200px;
   background: #428bca;
   height: 60px;
@@ -75,7 +82,7 @@ nav {
   transform: translate(-50%, -50%);
   padding-top: 20px;
   box-sizing: border-box;
-}
+} */
 
 ul {
   list-style-type: none;
@@ -84,19 +91,21 @@ ul {
   padding-left: 0;
   display: inline-block;
 }
-
+img {
+  width: 35px;
+}
 li {
   display: inline-block;
 }
 a {
-  color: #fff;
+  color:#fff;
   text-decoration: none;
   padding: 10px 5px;
   border-radius: 5px;
 }
 .router-link-active {
-  background: rgba(255, 255, 255, 0.8);
-  color: #444;
+  /* background: rgba(255, 255, 255, 0.8); */
+  color: #fff;
 }
 #blogHeader {
   margin-left: 106px;
@@ -108,5 +117,8 @@ a {
 #userCenter {
   float: left;
   margin-left: 30px;
+}
+#navbarColor01{
+width:1000px;
 }
 </style>
