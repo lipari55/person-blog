@@ -140,7 +140,7 @@ export default {
         },
         submitComment () {
             // 提交评论
-            console.log(this.comment);
+            // console.log(this.comment);
             if (this.comment !== '') {
                 axios({
                     'method': 'post',
@@ -163,7 +163,7 @@ export default {
                         }
                     })
                     .catch(error => {
-                        console.log(error);
+                        // console.log(error);
                     });
             } else {
                 Vue.prototype.$message.warning(
